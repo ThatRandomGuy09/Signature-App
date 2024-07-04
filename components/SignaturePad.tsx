@@ -4,14 +4,6 @@ import SignatureCanvas from "react-signature-canvas";
 import jsPDF from "jspdf";
 import ColorPicker from "./ColorPicker";
 
-const availableFonts = [
-  "Arial",
-  "Verdana",
-  "Helvetica",
-  "Times New Roman",
-  "Courier New",
-];
-
 const SignaturePad: React.FC = () => {
   const sigPadRef = useRef<SignatureCanvas>(null);
   const [penColor, setPenColor] = useState<string>("black");
