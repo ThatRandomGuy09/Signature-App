@@ -38,8 +38,8 @@ const SignaturePad: React.FC = () => {
         const imgData = offscreenCanvas.toDataURL(`image/${fileType}`, quality);
 
         if (fileType === "pdf") {
-          const pdfWidth = 210; // A4 width in mm
-          const pdfHeight = (height * pdfWidth) / width; // Maintain aspect ratio
+          const pdfWidth = 210;
+          const pdfHeight = (height * pdfWidth) / width;
           const pdf = new jsPDF({
             orientation: width > height ? "landscape" : "portrait",
             unit: "mm",
